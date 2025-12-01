@@ -1,0 +1,11 @@
+
+
+
+class Consulta:
+    def __init__(self, paciente: str, profissional: str, data_hora: str):
+        self.paciente = paciente
+        self.profissional = profissional
+        self.data_hora = data_hora
+
+    def resumo(self) -> str:
+        return f"{self.data_hora} - {self.paciente} com {self.profissional}"

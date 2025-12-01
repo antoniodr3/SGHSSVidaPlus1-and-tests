@@ -1,0 +1,14 @@
+
+
+
+from PythonVidaPlus1.models.consulta import Consulta
+
+def test_consulta_campos():
+    c = Consulta("João", "Dra. Ana", "2025-12-01 10:00")
+    assert c.paciente == "João"
+    assert c.profissional == "Dra. Ana"
+    assert c.data_hora == "2025-12-01 10:00"
+
+def test_consulta_resumo(consulta_basica):
+    assert "João" in consulta_basica.resumo()
+    assert "Dra. Ana" in consulta_basica.resumo()
