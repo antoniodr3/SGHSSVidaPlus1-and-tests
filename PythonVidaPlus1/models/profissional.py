@@ -2,12 +2,10 @@
 
 
 class Profissional:
-    def __init__(self, id_: str, nome: str, registro: str, especialidade: str, cargo: str):
-        self.id_ = id_
+    def __init__(self, nome: str, especialidade: str, registro: str):
         self.nome = nome
-        self.registro = registro
         self.especialidade = especialidade
-        self.cargo = cargo
+        self.registro = registro
 
-    def assinatura(self) -> str:
-        return f"{self.nome} ({self.cargo}, {self.especialidade}) - {self.registro}"
+    def resumo(self) -> str:
+        return f"{self.nome} — {self.especialidade} (Registro: {self.registro})"

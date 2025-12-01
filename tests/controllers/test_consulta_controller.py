@@ -14,8 +14,7 @@ def test_criar_consulta():
 def test_validar_consulta_valida():
     controller = ConsultaController()
     consulta = controller.criar_consulta("Maria", "Dr. Carlos", "2025-12-01", "Dor de cabeça")
-    # ⚠️ Falha proposital: esperamos False, mas o método retorna True
-    assert controller.validar(consulta) is False
+    assert controller.validar(consulta) is True  # ✅ Corrigido para refletir o retorno esperado
 
 def test_validar_consulta_invalida():
     controller = ConsultaController()

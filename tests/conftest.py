@@ -1,7 +1,15 @@
 
 
 
+import sys
+import os
 import pytest
+
+# Ajuste de caminho para reconhecer a raiz do projeto
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+
 from PythonVidaPlus1.models.consulta import Consulta
 from PythonVidaPlus1.models.exame import Exame
 from PythonVidaPlus1.models.profissional import Profissional
