@@ -1,0 +1,21 @@
+
+
+
+/* Fundos */
+.bg1 { background-image: url("imagens/1.jpg"); }
+.bg2 { background-image: url("imagens/2.jpg"); }
+.bg3 { background-image: url("imagens/3.jpg"); }
+.bg4 { background-image: url("imagens/4.jpg"); }
+.bg5 { background-image: url("imagens/5.jpg"); }
+.bg6 { background-image: url("imagens/6.jpg"); }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: white;
+}

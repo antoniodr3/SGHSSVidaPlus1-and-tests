@@ -1,0 +1,64 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>SGHSS - Profissionais</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="bg3">
+    <!-- Menu principal -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pacientes.html">Pacientes</a></li>
+            <li><a href="profissionais.html">Profissionais</a></li>
+            <li><a href="consultas_exames.html">Consultas & Exames</a></li>
+            <li><a href="agendamentos.html">Agendamentos</a></li>
+            <li><a href="prontuario.html">Prontuário</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <section class="conteudo">
+        <h1>Cadastro de Profissionais</h1>
+
+        <!-- Formulário -->
+        <form id="formProfissional">
+            <label>Nome:</label>
+            <input type="text" id="nomeProf" required><br><br>
+
+            <label>Especialidade:</label>
+            <input type="text" id="especialidade" required><br><br>
+
+            <label>Registro (CRM/COREN):</label>
+            <input type="text" id="registro" required><br><br>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <!-- Tabela -->
+        <h2>Lista de Profissionais</h2>
+        <table border="1" id="tabelaProfissionais">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Especialidade</th>
+                    <th>Registro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Profissionais aparecerão aqui -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Projeto SGHSS — Versão Web Escolar | Desenvolvido por Tonny</p>
+    </footer>
+</body>
+</html>

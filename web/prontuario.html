@@ -1,0 +1,68 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>SGHSS - Prontuário</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="bg6">
+    <!-- Menu principal -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pacientes.html">Pacientes</a></li>
+            <li><a href="profissionais.html">Profissionais</a></li>
+            <li><a href="consultas_exames.html">Consultas & Exames</a></li>
+            <li><a href="agendamentos.html">Agendamentos</a></li>
+            <li><a href="prontuario.html">Prontuário</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <section class="conteudo">
+        <h1>Prontuário & Prescrições</h1>
+
+        <!-- Formulário -->
+        <form id="formProntuario">
+            <label>Paciente:</label>
+            <input type="text" id="pacientePr" required><br><br>
+
+            <label>Descrição Clínica:</label>
+            <textarea id="descricaoPr" required></textarea><br><br>
+
+            <label>Prescrição:</label>
+            <textarea id="prescricaoPr" required></textarea><br><br>
+
+            <label>Data:</label>
+            <input type="date" id="dataPr" required><br><br>
+
+            <button type="submit">Registrar</button>
+        </form>
+
+        <!-- Tabela -->
+        <h2>Histórico de Prontuário</h2>
+        <table border="1" id="tabelaProntuario">
+            <thead>
+                <tr>
+                    <th>Paciente</th>
+                    <th>Descrição Clínica</th>
+                    <th>Prescrição</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Registros aparecerão aqui -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Projeto SGHSS — Versão Web Escolar | Desenvolvido por Tonny</p>
+    </footer>
+</body>
+</html>

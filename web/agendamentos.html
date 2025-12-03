@@ -1,0 +1,73 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>SGHSS - Agendamentos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="bg5">
+    <!-- Menu principal -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pacientes.html">Pacientes</a></li>
+            <li><a href="profissionais.html">Profissionais</a></li>
+            <li><a href="consultas_exames.html">Consultas & Exames</a></li>
+            <li><a href="agendamentos.html">Agendamentos</a></li>
+            <li><a href="prontuario.html">Prontuário</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <section class="conteudo">
+        <h1>Agendamentos & Atendimentos</h1>
+
+        <!-- Formulário -->
+        <form id="formAgendamento">
+            <label>Paciente:</label>
+            <input type="text" id="pacienteAg" required><br><br>
+
+            <label>Profissional:</label>
+            <input type="text" id="profissionalAg" required><br><br>
+
+            <label>Tipo de Atendimento:</label>
+            <select id="tipoAg" required>
+                <option value="">Selecione</option>
+                <option value="Consulta">Consulta</option>
+                <option value="Exame">Exame</option>
+                <option value="Outro">Outro</option>
+            </select><br><br>
+
+            <label>Data:</label>
+            <input type="date" id="dataAg" required><br><br>
+
+            <button type="submit">Agendar</button>
+        </form>
+
+        <!-- Tabela -->
+        <h2>Lista de Agendamentos</h2>
+        <table border="1" id="tabelaAgendamentos">
+            <thead>
+                <tr>
+                    <th>Paciente</th>
+                    <th>Profissional</th>
+                    <th>Tipo</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Agendamentos aparecerão aqui -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Projeto SGHSS — Versão Web Escolar | Desenvolvido por Tonny</p>
+    </footer>
+</body>
+</html>
